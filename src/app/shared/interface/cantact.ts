@@ -9,3 +9,9 @@ export interface Contact {
     state: string;
     zip: string;
 }
+
+export interface Schema {
+    name: string;
+    head: string;
+    fixed: boolean
+}

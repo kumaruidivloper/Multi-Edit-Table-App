@@ -1,12 +1,12 @@
-import {Component, ViewChildren, OnInit, QueryList, ElementRef} from '@angular/core';
-import {MatInput} from '@angular/material/input';
-
+import { Injectable } from '@angular/core';
+import { of } from 'rxjs'
 export interface PeriodicElement {
   name: string;
   position: number;
   weight: number;
   symbol: string;
 }
+
 
 const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
@@ -21,24 +21,26 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+const SCHEMA:any[]=[
+   {name:'position',head:"No.",fixed:true},
+   {name:'name',head:"Name",fixed:true},
+   {name:'weight',head:"Weigth",fixed:false},
+   {name:'symbol',head:"Symbol",fixed:false},
+   
+]
+@Injectable({
+  providedIn: 'root',
 })
-export class AppComponent {
-  displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
-  dataSource = ELEMENT_DATA;
-  editRowId = -1;
-  @ViewChildren(MatInput, {read: ElementRef}) inputs: QueryList<ElementRef>;
+export class DataService {
 
-  editCell(row: number, element: any) {
-    this.editRowId = row;
-    setTimeout(() => {
-      // tslint:disable-next-line: triple-equals
-      this.inputs.find(x => x.nativeElement.getAttribute('name') == element).nativeElement.focus();
-
-    });
+  constructor() { }
+  getData()
+  {
+    return of(ELEMENT_DATA)
+  }
+  getSchema()
+  {
+    return of(SCHEMA)
   }
 
 }

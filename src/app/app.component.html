@@ -1,11 +1,1 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div class="example-container mat-elevation-z8">
-  <mat-table #table [dataSource]="dataSource">
-    <ng-container [matColumnDef]="col" *ngFor="let col of displayedColumns">
-      <mat-header-cell *matHeaderCellDef> {{ col }} </mat-header-cell>
-      <mat-cell *matCellDef="let element"> {{ element[col] }} </mat-cell>
-    </ng-container>
-    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
-    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
-  </mat-table>
-</div>
+<app-dynamic-editable-table></app-dynamic-editable-table>

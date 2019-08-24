@@ -43,127 +43,18 @@
         "city": "Northfork",
         "state": "WV",
         "zip": "24868"
-      },
-      {
-        "id": 5,
-        "firstName": "Aino",
-        "lastName": "Uno",
-        "email": "auno@gmail.com",
-        "work": "code",
-        "street": "185 N High St",
-        "city": "Columbus",
-        "state": "OH",
-        "zip": "43215"
-      },
-      {
-        "id": 6,
-        "firstName": "Amy",
-        "lastName": "Little",
-        "email": "alittle@gmail.com",
-        "work": "deploy",
-        "street": "3601 Dallas Pkwy",
-        "city": "Plano",
-        "state": "TX",
-        "zip": "75093"
-      },
-      {
-        "id": 7,
-        "firstName": "Doris",
-        "lastName": "Chandler",
-        "email": "dchandler@gmail.com",
-        "work": "design",
-        "street": "1660 India St",
-        "city": "San Diego",
-        "state": "CA",
-        "zip": "92110"
-      },
-      {
-        "id": 8,
-        "firstName": "Brielle",
-        "lastName": "Davidson",
-        "email": "bdavidson@gmail.com",
-        "work": "code",
-        "street": "5640 Kearny Mesa Rd Ste H",
-        "city": "San Diego",
-        "state": "CA",
-        "zip": "92110"
-      },
-      {
-        "id": 9,
-        "firstName": "Vivian",
-        "lastName": "Hurst",
-        "email": "vhurst@gmail.com",
-        "work": "deploy",
-        "street": "3960 W Point Loma Blvd",
-        "city": "San Diego",
-        "state": "CA",
-        "zip": "92110"
-      },
-      {
-        "id": 10,
-        "firstName": "Haley",
-        "lastName": "Frost",
-        "email": "hforst@gmail.com",
-        "work": "design",
-        "street": "1443 W Fullerton Ave",
-        "city": "Chicago",
-        "state": "IL",
-        "zip": "60614"
-      },
-      {
-        "id": 11,
-        "firstName": "Fiona",
-        "lastName": "Gaines",
-        "email": "fgaines@gmail.com",
-        "work": "code",
-        "street": "1443 W Fullerton Ave",
-        "city": "Chicago",
-        "state": "IL",
-        "zip": "60603"
-      },
-      {
-        "id": 12,
-        "firstName": "Olivia",
-        "lastName": "Flynn",
-        "email": "oflynn@gmail.com",
-        "work": "deploy",
-        "street": "1541 W Bryn Mawr Ave",
-        "city": "Chicago",
-        "state": "IL",
-        "zip": "60660"
-      },
-      {
-        "id": 13,
-        "firstName": "Jennifer",
-        "lastName": "Marshall",
-        "email": "jmarshall@gmail.com",
-        "work": "design",
-        "street": "509 Amsterdam Ave",
-        "city": "New York",
-        "state": "NY",
-        "zip": "10024"
-      },
-      {
-        "id": 14,
-        "firstName": "Hope",
-        "lastName": "Kennedy",
-        "email": "hkennedy@gmail.com",
-        "work": "code",
-        "street": "524 Court St",
-        "city": "Brooklyn",
-        "state": "NY",
-        "zip": "11231"
-      },
-      {
-        "firstName": "dsadas",
-        "lastName": "dsadsd",
-        "email": "sadas@fdsfsd.com",
-        "work": "design",
-        "street": "csasdsad",
-        "city": "dsadsa",
-        "state": "dasdsadsad",
-        "zip": "53455",
-        "id": 15
       }
+    ],
+
+    "schema": [
+        {"name":"id", "head":"No.", "fixed": true},
+        {"name":"firstName","head":"FirstName","fixed": true},
+        {"name":"lastName", "head":"LastName", "fixed": false},
+        {"name":"email", "head":"Email", "fixed": true},
+        {"name":"work", "head":"Work", "fixed": true},
+        {"name":"street", "head":"Street", "fixed": true},
+        {"name":"city", "head":"City", "fixed": true},
+        {"name":"state", "head":"State", "fixed": false},
+        {"name":"zip", "head":"Zip", "fixed": false}
     ]
   }

@@ -6,7 +6,7 @@ import { catchError, tap } from 'rxjs/operators';
 // import { Logger } from '@app/core';
 // import { ToastService } from '@app/core';
 
-import { Contact } from '../shared/interface/Cantact';
+import { Contact, Schema } from '../shared/interface/Cantact';
 
 @Injectable({
     providedIn: 'root'
@@ -22,6 +22,16 @@ export class ContactService {
         // this.logger.log(this.baseUrl);
         return this.http
             .get<Contact[]>(this.baseUrl)
+    }
+
+    getSchema(): Observable<any> {
+        return this.http
+            .get<Schema[]>('http://localhost:3000/schema')
+    }
+
+    updateContact(id: number): Observable<any> {
+        return this.http
+            .put<Contact[]>(this.baseUrl, id);
     }
 
 
