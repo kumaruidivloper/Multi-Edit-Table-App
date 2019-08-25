@@ -1,60 +1,95 @@
 {
-    "contacts": [
-      {
-        "id": 1,
-        "firstName": "Quinn",
-        "lastName": "Nixon",
-        "email": "qnixon@gmail.com",
-        "work": "design",
-        "street": "1760 Hillhurst Ave",
-        "city": "Los Angeles",
-        "state": "CA",
-        "zip": "90027"
-      },
-      {
-        "id": 2,
-        "firstName": "Eric",
-        "lastName": "Smith",
-        "email": "esmith@gmail.com",
-        "work": "code",
-        "street": "1910 Pacific Ave",
-        "city": "Dallas",
-        "state": "TX",
-        "zip": "75201"
-      },
-      {
-        "id": 3,
-        "firstName": "Carlson",
-        "lastName": "Cox",
-        "email": "ccox@gmail.com",
-        "work": "deploy",
-        "street": "12345 Beltline Rd",
-        "city": "Dallas",
-        "state": "TX",
-        "zip": "75080"
-      },
-      {
-        "id": 4,
-        "firstName": "Kelsea",
-        "lastName": "Kelly",
-        "email": "kkelly@gmail.com",
-        "work": "design",
-        "street": "33915 Coal Heritage Rd",
-        "city": "Northfork",
-        "state": "WV",
-        "zip": "24868"
-      }
-    ],
-
-    "schema": [
-        {"name":"id", "head":"No.", "fixed": true},
-        {"name":"firstName","head":"FirstName","fixed": true},
-        {"name":"lastName", "head":"LastName", "fixed": false},
-        {"name":"email", "head":"Email", "fixed": true},
-        {"name":"work", "head":"Work", "fixed": true},
-        {"name":"street", "head":"Street", "fixed": true},
-        {"name":"city", "head":"City", "fixed": true},
-        {"name":"state", "head":"State", "fixed": false},
-        {"name":"zip", "head":"Zip", "fixed": false}
-    ]
-  }
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Quinn",
+      "lastName": "Kumarr",
+      "email": "qnixon@gmail.com",
+      "work": "design",
+      "street": "1760 Hillhurst Ave",
+      "city": "Los Angeles",
+      "state": "Karnataka",
+      "zip": "560066"
+    },
+    {
+      "id": 2,
+      "firstName": "Eric",
+      "lastName": "Smith",
+      "email": "esmith@gmail.com",
+      "work": "code",
+      "street": "1910 Pacific Ave",
+      "city": "Dallas",
+      "state": "TX",
+      "zip": "75201"
+    },
+    {
+      "id": 3,
+      "firstName": "Carlson",
+      "lastName": "Coxss",
+      "email": "ccox@gmail.com",
+      "work": "deploy",
+      "street": "12345 Beltline Rd",
+      "city": "Dallas",
+      "state": "California",
+      "zip": "75080"
+    },
+    {
+      "id": 4,
+      "firstName": "Kelsea",
+      "lastName": "Kellysdd",
+      "email": "kkelly@gmail.com",
+      "work": "design",
+      "street": "33915 Coal Heritage Rd",
+      "city": "Northfork",
+      "state": "WVsd",
+      "zip": "24868dsadsasd"
+    }
+  ],
+  "schema": [
+    {
+      "name": "id",
+      "head": "No.",
+      "fixed": true
+    },
+    {
+      "name": "firstName",
+      "head": "FirstName",
+      "fixed": true
+    },
+    {
+      "name": "lastName",
+      "head": "LastName",
+      "fixed": false
+    },
+    {
+      "name": "email",
+      "head": "Email",
+      "fixed": true
+    },
+    {
+      "name": "work",
+      "head": "Work",
+      "fixed": true
+    },
+    {
+      "name": "street",
+      "head": "Street",
+      "fixed": true
+    },
+    {
+      "name": "city",
+      "head": "City",
+      "fixed": true
+    },
+    {
+      "name": "state",
+      "head": "State",
+      "fixed": false
+    },
+    {
+      "name": "zip",
+      "head": "Zip",
+      "fixed": false
+    }
+  ]
+}

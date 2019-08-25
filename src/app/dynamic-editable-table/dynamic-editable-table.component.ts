@@ -19,6 +19,7 @@ export class DynamicEditableTableComponent implements OnInit {
   schema:any[];
   editRowId:number=-1;
   NgForm:any;
+  editedRow:number=-1;
   // getControl: FormGroup;
 
   @ViewChildren(MatInput,{read:ElementRef}) inputs:QueryList<ElementRef>;
@@ -62,9 +63,19 @@ ngOnInit()
     console.log('row value'+row);
     console.log('element value'+element)
     this.editRowId=row;
+    this.editedRow=row;
     setTimeout(()=>{
-      this.inputs.find(x=>x.nativeElement.getAttribute('id')==element).nativeElement.focus();
+      this.inputs.find(x=>x.nativeElement.getAttribute('id')===element).nativeElement.focus();
       // this.inputs.find(x => ElementRef.bind(this.ngForm.control.value));
     })
+  }
+
+  getEditedValues(){
+    console.log(this.editedRow);
+    const EditedRowID = this.dataSource[this.editedRow-1];
+    this.contactService.updateContact(EditedRowID)
+    .subscribe(res => {
+       console.log("Updated the selected contact");
+    });
   }
 }

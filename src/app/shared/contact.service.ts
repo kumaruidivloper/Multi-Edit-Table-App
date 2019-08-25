@@ -29,9 +29,10 @@ export class ContactService {
             .get<Schema[]>('http://localhost:3000/schema')
     }
 
-    updateContact(id: number): Observable<any> {
+    updateContact(contact: any): Observable<any> {
         return this.http
-            .put<Contact[]>(this.baseUrl, id);
+            .put<Contact[]>(`${this.baseUrl}/${contact.id}`, contact);
+            
     }
 
 
